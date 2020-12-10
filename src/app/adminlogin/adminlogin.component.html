@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Sign-in Sign-up Form</title>
+</head>
+<body>
+<div class="container">
+<div id="signInSignUpBox">
+  <div id="overlay">
+    <div id="overlayInner">
+      <div id="signUp">
+        <h1>Welcome Back!</h1>
+        <p>To Keep Connected Please Login With Your Personal Info.</p>
+        <button onClick='moveSliderRight()'>Sign In</button>
+      </div>
+      <div id="signIn">
+        <h1>Hello, Admin!</h1>
+        <p>Please Enter Your Personal Information For Sign Up</p>
+        <button onClick='moveSliderLeft()'>Sign Up</button>
+      </div>
+    </div>
+  </div>
+  <div id="forms">
+    <div id="signInForm" class='shiftRight'>
+      <div class="holder">
+        <h1>Sign in</h1>
+        <p>or use your account</p>
+        <input type="email" placeholder="Email"><br>
+        <input type="password" placeholder='Password'>
+        <p>Forgot your password?</p>
+        <button [routerLink]="['/homepage']" routerLinkActive="active" >Sign In</button>
+      </div>
+    </div>
+    <div id="signUpForm">
+        <div class="holder">
+          <h1>Create Account</h1>
+          <p>or use your email for registration</p>
+          <input type="text" placeholder="Name"><br>
+          <input type="email" placeholder="Email"><br>
+          <input type="password" placeholder='Password'>
+          <button> Sign Up</button>
+        </div>
+    </div>
+  </div>
+</div>
+</div>
+</body>
+</html>
